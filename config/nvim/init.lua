@@ -15,9 +15,6 @@ vim.o.shiftwidth = 2
 vim.o.softtabstop = 2
 
 local keymap = vim.api.nvim_set_keymap
-keymap('i', '<C-space>', '<Esc>', {})
-keymap('n', '<c-s>', ':w<CR>', {})
-keymap('i', '<c-s>', '<Esc>:w<CR>a', {})
 keymap('n', '<space><space>', '<C-^>', {})
 local opts = { noremap = true }
 keymap('n', '<c-j>', '<c-w>j', opts)

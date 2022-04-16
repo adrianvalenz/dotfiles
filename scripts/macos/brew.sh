@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-brew cask install firefox
-brew cask install google-chrome
-brew cask install obs
-brew cask install slack
+brew install --cask firefox
+brew install --cask google-chrome
+brew install --cask obs
+brew install --cask slack
 
 brew install --HEAD neovim
 brew install lua
