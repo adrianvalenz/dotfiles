@@ -40,3 +40,7 @@ then
   ln -s "$HOME/dotfiles/.zshrc" ".zshrc"
   echo "✅ linked .zshrc file"
 fi
+
+# TODO: Create script to link .tmux.conf file
+
+# TODO: rewrite install.sh script to be run from the home directory after being cloned
