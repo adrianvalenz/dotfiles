@@ -3,19 +3,19 @@
 
 ## Installing packages
 
-1. Install Kitty Terminal via: https://sw.kovidgoyal.net/kitty/
+### 1. Install Kitty Terminal via: https://sw.kovidgoyal.net/kitty/
 
 `curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin`
 
-2. Install Homebrew via: https://brew.sh/
+### 2. Install Homebrew via: https://brew.sh/
 
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
-3. Install Oh-My-ZSH via: https://ohmyz.sh
+### 3. Install Oh-My-ZSH via: https://ohmyz.sh
 
 `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 
-4. Install Ruby via: https://github.com/rbenv/rbenv
+### 4. Install Ruby via: https://github.com/rbenv/rbenv
 
 `brew install rbenv ruby-build`
 
@@ -32,7 +32,7 @@ Install a Ruby version with:
 
 `rbenv install 3.1.2` (latest release or your preference)
 
-5. Intall NPM via: 
+### 5. Intall NPM via: 
 
 `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
 
@@ -45,6 +45,22 @@ Restart terminal and:
 Confirm you are using the latest version of Node and NPM
 
 `node -v && npm -v`
+
+Update Node:
+
+`nvm install node --reinstall-packages-from=node`
+
+Change version:
+
+Here's how to switch to another version and use it.
+
+`nvm install xx.xx`
+
+`nvm use xx.xx`
+
+And to set the default:
+
+`nvm alias default xx.xx`
 
 ## Fonts
 
