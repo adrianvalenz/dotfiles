@@ -1,0 +1,22 @@
+[user]
+  name    = Adrian Valenzuela
+  email   = adrianvalenz.web@gmail.com
+[github]
+  user    = adrianvalenz
+[alias]
+  a       = add -A
+  ca      = commit -a
+  cam     = commit -am
+  cm      = commit -m
+  s       = status
+  p       = push
+  pom     = push origin main
+  puom    = pull origin main
+  cob     = checkout -b
+  co      = checkout
+  f       = fetch
+  fp      = fetch --prune --all
+  l       = log --oneline --decorate --graph
+  lall    = log --oneline --decorate --graph --all
+  ls      = log --oneline --decorate --graph --stat
+  lt      = log --graph --decorate --pretty=format:'%C(yellow)%h%Creset%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset'

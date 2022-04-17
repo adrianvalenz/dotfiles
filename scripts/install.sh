@@ -17,13 +17,13 @@ fi
 if [ ! -d "$nvim_folder" ]
 then
   ln -s "$HOME/dotfiles/config/nvim/" "$nvim_folder"
-  echo "✅ creating nvim folder"
+  echo "✅ creating nvim config folder"
 fi
 
 if [ ! -d "$kitty_folder" ]
 then
   ln -s "$HOME/dotfiles/config/kitty/" "$kitty_folder"
-  echo "✅ created kitty folder"
+  echo "✅ created kitty config folder"
 fi
 
 if [ ! -f "$HOME/.zshrc" ]
@@ -37,6 +37,12 @@ if [ ! -f "$HOME/.tmux.conf" ]
 then
   cd "$HOME"
   ln -s "$HOME/dotfiles/.tmux.conf" ".tmux.conf"
-  echo "✅ link .tmux.conf file"
+  echo "✅ linked .tmux.conf file"
 fi
 
+if [ ! -f "$HOME/.gitconfig" ]
+then
+  cd "$HOME"
+  ln -s "$HOME/dotfiles/.gitconfig" ".gitconfig"
+  echo "✅ linked .gitconfig file"
+fi
