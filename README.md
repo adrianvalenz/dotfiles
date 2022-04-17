@@ -32,7 +32,7 @@ Install a Ruby version with:
 
 `rbenv install 3.1.2` (latest release or your preference)
 
-### 5. Intall NPM via: 
+### 5. Intall NPM via: https://github.com/nvm-sh/nvm/blob/master/README.md#usage 
 
 `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
 
