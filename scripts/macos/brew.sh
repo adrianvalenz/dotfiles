@@ -5,6 +5,8 @@ brew install --cask google-chrome
 brew install --cask obs
 brew install --cask slack
 
+# libpg is needed to use the native pg gem without Rosetta on M1 macs
+brew install libpq
 # https://wiki.postgresql.org/wiki/Homebrew
 brew install postgresql
 brew install redis
