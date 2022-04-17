@@ -19,7 +19,10 @@
 
 `brew install rbenv ruby-build`
 
-`rbenv init` and follow instructions
+`rbenv init` and follow instructions.
+
+Part of the instructions is placing this line of code in your `.zshrc` file
+`eval "$(rbenv init - zsh)"`
 
 Close your terminal and re-open and run:
 
