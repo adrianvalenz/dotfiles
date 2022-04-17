@@ -110,11 +110,3 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-seek() {
-  if [ "$1" != "" ]
-  then
-    grep -H -r --exclude-dir=node_modules "$1" * | less
-  else
-    echo "need to type in a string"
-  fi
-}
