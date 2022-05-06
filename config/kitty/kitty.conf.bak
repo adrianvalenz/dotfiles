@@ -1,0 +1,10 @@
+# BEGIN_KITTY_THEME
+# Tokyo Night
+include current-theme.conf
+# END_KITTY_THEME
+#
+font_family JetBrains Mono
+
+font_size 13.0
+adjust_line_height 120%
+

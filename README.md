@@ -84,3 +84,9 @@ Then to link the config files for some of the packages, run:
 
 `./dotfiles/scripts/install.sh`
 
+## Other resources and tips
+
+resource: https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts
+The macos/brew.sh taps homebrew/cask-fonts. Now all you need to do is brew install a font of your choice to get icons to work (because you need a patched font). You'd run something like: `brew install --cask font-jetbrains-mono-nerd-font`. It should be a Nerd Font because they are patched and can render icons. (https://github.com/ryanoasis/nerd-fonts)
+
+Generating an SSH key: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent 
