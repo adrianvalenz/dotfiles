@@ -3,6 +3,9 @@ require('plugins')
 
 vim.cmd [[
   set clipboard=unnamed
+  set nowrap
+  map <ScrollWheelUp> <C-Y>
+  map <ScrollWheelDown> <C-E>
 ]]
 
 vim.o.number = true
@@ -21,9 +24,11 @@ vim.o.softtabstop = 2
 local keymap = vim.api.nvim_set_keymap
 keymap('n', '<space><space>', ':Exp<cr>', {})
 local opts = { noremap = true }
-keymap('n', '<c-f>', '<c-w>', opts)
-keymap('n', '<c-f>"', ':sp<cr>', opts)
-keymap('n', '<c-f>%', ':vs<cr>', opts)
+keymap('n', '<C-A>', '<C-W>', opts)
+keymap('n', '<C-H>', '<C-W><C-H>', opts)
+keymap('n', '<C-J>', '<C-W><C-J>', opts)
+keymap('n', '<C-K>', '<C-W><C-K>', opts)
+keymap('n', '<C-L>', '<C-W><C-L>', opts)
 keymap('n', '<c-p>', '<cmd>Telescope find_files<cr>', opts)
 keymap('n', '<leader>fg', '<cmd>Telescope live_grep<cr>', opts)
 
