@@ -29,6 +29,7 @@ keymap('n', '<C-H>', '<C-W><C-H>', opts)
 keymap('n', '<C-J>', '<C-W><C-J>', opts)
 keymap('n', '<C-K>', '<C-W><C-K>', opts)
 keymap('n', '<C-L>', '<C-W><C-L>', opts)
+keymap('n', '<C-Q>', '<C-Y>', opts)
 keymap('n', '<c-p>', '<cmd>Telescope find_files<cr>', opts)
 keymap('n', '<leader>fg', '<cmd>Telescope live_grep<cr>', opts)
 

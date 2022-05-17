@@ -8,6 +8,24 @@ plugins=(spotify)
 
 alias vim="nvim"
 
+listenfor() {
+  if [ "$1" != "" ]
+  then
+    lsof -wni tcp:"$1"
+  else
+    echo "need to enter a port number (i.e. 3000)"
+  fi
+}
+
+killpid() {
+  if [ "$1" != "" ]
+  then
+    kill -9 "$1"
+  else
+    echo "need to enter PID number"
+  fi
+}
+
 seek() {
   if [ "$1" != "" ]
   then
