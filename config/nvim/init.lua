@@ -3,9 +3,10 @@ require('plugins')
 
 vim.cmd [[
   set clipboard=unnamed
-  set nowrap
   map <ScrollWheelUp> <C-Y>
   map <ScrollWheelDown> <C-E>
+  set mouse=a
+  set shortmess+=A
 ]]
 
 vim.o.number = true
@@ -23,6 +24,7 @@ vim.o.softtabstop = 2
 
 local keymap = vim.api.nvim_set_keymap
 keymap('n', '<space><space>', ':Exp<cr>', {})
+keymap('n', 'nh', ':noh<cr>', {})
 local opts = { noremap = true }
 keymap('n', '<C-A>', '<C-W>', opts)
 keymap('n', '<C-H>', '<C-W><C-H>', opts)

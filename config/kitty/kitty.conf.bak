@@ -1,10 +1,56 @@
 # BEGIN_KITTY_THEME
-# Tokyo Night
+# Tokyo Night Storm
 include current-theme.conf
 # END_KITTY_THEME
 #
-font_family JetBrains Mono
 
+# Dank Mono
+# font_family Dank Mono
+# font_size 14.0
+# adjust_line_height 100%
+
+# JetBrains Mono (recommend settings from their website)
+font_family JetBrains Mono
 font_size 13.0
 adjust_line_height 120%
+
+# for Victor Mono
+# font_family Victor Mono
+# font_size 14.0
+
+# hide title bar
+# hide_window_decorations yes
+
+# ensures at least one tab is always visible
+# tab_bar_min_tabs 1
+
+# tab management
+map ctrl+i previous_tab
+map ctrl+o next_tab
+
+# change tab placement
+map cmd+ctrl+i move_tab_backward
+map cmd+ctrl+o move_tab_forward
+
+# open new tab in current working directory
+map cmd+t new_tab_with_cwd
+
+# open new tab in user root directory
+map cmd+ctrl+t new_tab
+
+# change name of tab for label organization
+map ctrl+, set_tab_title
+
+# jump to tabs
+map cmd+1 goto_tab 1
+map cmd+2 goto_tab 2
+map cmd+3 goto_tab 3
+map cmd+4 goto_tab 4
+map cmd+5 goto_tab 5
+map cmd+6 goto_tab 6
+map cmd+7 goto_tab 7
+map cmd+8 goto_tab 8
+map cmd+9 goto_tab 9
+map cmd+0 goto_tab 0
+
 

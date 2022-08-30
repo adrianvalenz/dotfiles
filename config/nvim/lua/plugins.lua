@@ -4,8 +4,8 @@
 
 require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  -- use 'folke/tokyonight.nvim'
-  use "rebelot/kanagawa.nvim"
+  use 'folke/tokyonight.nvim'
+  -- use "rebelot/kanagawa.nvim"
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -16,16 +16,18 @@ require('packer').startup(function(use)
   }
 end)
 
-vim.g.tokyonight_style = "night"
+vim.g.tokyonight_style = "night" 
+-- day, night, storm for Tokyo Night
 vim.g.tokyonight_italic_functions = true
 vim.g.tokyonight_sidebars = { "qf", "vista_kind", "terminal", "packer" }
--- vim.cmd[[colorscheme tokyonight]]
-vim.cmd[[colorscheme kanagawa]]
+vim.cmd[[colorscheme tokyonight]]
+-- vim.cmd[[colorscheme kanagawa]]
 
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = 'kanagawa',
+    -- theme = 'kanagawa',
+    theme = 'tokyonight',
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
     disabled_filetypes = {},
