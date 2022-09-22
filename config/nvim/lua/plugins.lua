@@ -1,11 +1,12 @@
+-- run ":PackerCompile" when changing this file
 -- https://github.com/folke/which-key.nvim <- Install this soon. Looks cool
 -- 'nyngwang/NeoZoom.lua',
 -- 'kyazdani42/nvim-tree.lua',
 
 require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  use 'folke/tokyonight.nvim'
-  -- use "rebelot/kanagawa.nvim"
+  -- use 'folke/tokyonight.nvim'
+  use "rebelot/kanagawa.nvim"
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -16,18 +17,18 @@ require('packer').startup(function(use)
   }
 end)
 
-vim.g.tokyonight_style = "storm" 
+-- vim.g.tokyonight_style = "storm" 
 -- day, night, storm for Tokyo Night
-vim.g.tokyonight_italic_functions = true
-vim.g.tokyonight_sidebars = { "qf", "vista_kind", "terminal", "packer" }
-vim.cmd[[colorscheme tokyonight]]
--- vim.cmd[[colorscheme kanagawa]]
+-- vim.g.tokyonight_italic_functions = true
+-- vim.g.tokyonight_sidebars = { "qf", "vista_kind", "terminal", "packer" }
+-- vim.cmd[[colorscheme tokyonight]]
+vim.cmd[[colorscheme kanagawa]]
 
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    -- theme = 'kanagawa',
-    theme = 'tokyonight',
+    theme = 'kanagawa',
+    -- theme = 'tokyonight',
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''},
     disabled_filetypes = {},
@@ -53,3 +54,4 @@ require('lualine').setup {
   tabline = {},
   extensions = {}
 }
+

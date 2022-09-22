@@ -7,6 +7,8 @@ vim.cmd [[
   map <ScrollWheelDown> <C-E>
   set mouse=a
   set shortmess+=A
+  set cursorcolumn
+  set cursorline
 ]]
 
 vim.o.number = true
