@@ -1,5 +1,5 @@
 # BEGIN_KITTY_THEME
-# Tokyo Night Storm
+# Tokyo Night
 include current-theme.conf
 # END_KITTY_THEME
 #
@@ -7,13 +7,11 @@ include current-theme.conf
 # Dank Mono
 # font_family Dank Mono
 # font_size 14.0
-# adjust_line_height 100%
+# adjust_line_height 150%
 
 # JetBrains Mono (recommend settings from their website)
 font_family JetBrains Mono
-font_size 14.0
-# font_size 13.0
-# adjust_line_height 100%
+font_size 13.0
 adjust_line_height 120%
 
 # for Victor Mono
@@ -55,4 +53,12 @@ map cmd+8 goto_tab 8
 map cmd+9 goto_tab 9
 map cmd+0 goto_tab 0
 
+# Window padding
+window_padding_width 12
 
+# title bar
+macos_titlebar_color background
+
+cursor_shape block
+mouse_hide_wait -1.0
+disable_ligature always

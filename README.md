@@ -86,6 +86,9 @@ Then to link the config files for some of the packages, run:
 
 ## Other resources and tips
 
+resource: https://marioyepes.com/neovim-ide-with-lua-for-web-development/
+This article has some tips to optimize NeoVim to be used with PHP and other neat general features.
+
 resource: https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts
 The macos/brew.sh taps homebrew/cask-fonts. Now all you need to do is brew install a font of your choice to get icons to work (because you need a patched font). You'd run something like: `brew install --cask font-jetbrains-mono-nerd-font`. It should be a Nerd Font because they are patched and can render icons. (https://github.com/ryanoasis/nerd-fonts)
 

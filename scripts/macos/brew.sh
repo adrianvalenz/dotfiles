@@ -18,6 +18,8 @@ brew install --HEAD neovim
 brew install lua
 brew install tmux
 
+brew install php
+
 brew tap homebrew/cask-fonts
 # brew install --cask font-hack-nerd-font
 # brew install --cask font-victor-mono
