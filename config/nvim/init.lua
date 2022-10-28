@@ -3,6 +3,8 @@ require('plugins')
 
 -- autocmd Filetype php setlocal autoindent expandtab tabstop=4 shiftwidth=4
 vim.cmd [[
+  " au BufRead,BufNewFile *.php syntax on
+  " au BufRead,BufNewFile *.php colorscheme
   autocmd BufReadPost,FileReadPost,BufNewFile * call system("tmux rename-window " . expand("%:t"))
   autocmd Filetype php setlocal autoindent expandtab tabstop=4 shiftwidth=4
   " Python settings
@@ -29,8 +31,6 @@ vim.cmd [[
   colorscheme gruvbox
 ]]
 
-vim.cmd("au BufRead,BufNewFile *.php syntax on")
-vim.cmd("au BufRead,BufNewFile *.php colorscheme ")
 -- a resource: article https://marioyepes.com/neovim-ide-with-lua-for-web-development/
 --
 vim.o.background = "dark" -- or "light" for light mode

@@ -7,6 +7,7 @@
 plugins=(spotify)
 
 alias vim="nvim"
+alias vi="nvim"
 
 listenfor() {
   if [ "$1" != "" ]
