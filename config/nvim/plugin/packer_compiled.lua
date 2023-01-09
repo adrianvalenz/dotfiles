@@ -85,6 +85,11 @@ _G.packer_plugins = {
     path = "/Users/adrianvalenzuela/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/Users/adrianvalenzuela/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    url = "https://github.com/neovim/nvim-lspconfig"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/Users/adrianvalenzuela/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",

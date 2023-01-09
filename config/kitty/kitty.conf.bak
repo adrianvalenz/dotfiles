@@ -1,8 +1,13 @@
 # BEGIN_KITTY_THEME
-# Tokyo Night
+# citylights
 include current-theme.conf
 # END_KITTY_THEME
 #
+
+# Hack
+# font_family Hack
+# font_size 13.0
+# adjust_line_height 180%
 
 # Dank Mono
 # font_family Dank Mono
@@ -38,7 +43,7 @@ map cmd+t new_tab_with_cwd
 # open new tab in user root directory
 map cmd+ctrl+t new_tab
 
-# change name of tab for label organization
+# change name of tab for label organization (that's a comma you press!)
 map ctrl+, set_tab_title
 
 # jump to tabs
@@ -54,11 +59,13 @@ map cmd+9 goto_tab 9
 map cmd+0 goto_tab 0
 
 # Window padding
-window_padding_width 12
+# window_padding_width 12
 
 # title bar
-macos_titlebar_color background
+# macos_titlebar_color background
+# macos_titlebar_color system
 
 cursor_shape block
+cursor_blink_interval -1
 mouse_hide_wait -1.0
 disable_ligature always

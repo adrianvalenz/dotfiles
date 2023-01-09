@@ -6,8 +6,8 @@
 # Example: plugins=(rails git ruby)
 plugins=(spotify)
 
-alias vim="nvim"
-alias vi="nvim"
+alias vim="lvim"
+alias vi="lvim"
 
 listenfor() {
   if [ "$1" != "" ]
