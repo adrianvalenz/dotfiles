@@ -18,7 +18,7 @@ vim.cmd [[
   set autowrite
   set backspace=indent,eol,start
   set clipboard=unnamed
-  set cursorcolumn
+  "  set cursorcolumn
   set cursorline
   set fileformat=unix
   set mouse=a

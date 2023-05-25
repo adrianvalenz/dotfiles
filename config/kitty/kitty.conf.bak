@@ -1,27 +1,58 @@
 # BEGIN_KITTY_THEME
-# citylights
+# kanagawabones
 include current-theme.conf
 # END_KITTY_THEME
 #
 
-# Hack
-# font_family Hack
-# font_size 13.0
-# adjust_line_height 180%
-
 # Dank Mono
 # font_family Dank Mono
 # font_size 14.0
-# adjust_line_height 150%
+# adjust_line_height 130%
+
+# Hack
+# font_family Hack
+# font_size 13.0
+# adjust_line_height 140%
+
+# Fira Code
+font_family Fira Code
+font_size 13.0
+adjust_line_height 110%
+
+# SF Mono
+# font_family SF Mono
+# font_size 13.0
+# adjust_line_height 120%
+
+# Monaco Big
+# font_family Monaco
+# font_size 14.0
+# adjust_line_height 113%
 
 # JetBrains Mono (recommend settings from their website)
 font_family JetBrains Mono
 font_size 13.0
 adjust_line_height 120%
 
-# for Victor Mono
-# font_family Victor Mono
+# Monaco
+# font_family Monaco
+# font_size 13.0
+# adjust_line_height 120%
+
+# Menlo
+# font_family Menlo
+# font_size 13.0
+# adjust_line_hight 120%
+
+# ProggyCleanTT
+# font_family ProggyCleanTT
+# font_size 16.0
+# adjust_line_height 100%
+
+# Anonymous Pro
+# font_family Anonymous Pro
 # font_size 14.0
+# adjust_line_height 150%
 
 # hide title bar
 # hide_window_decorations yes
@@ -59,13 +90,17 @@ map cmd+9 goto_tab 9
 map cmd+0 goto_tab 0
 
 # Window padding
-# window_padding_width 12
+window_padding_width 8
 
 # title bar
 # macos_titlebar_color background
 # macos_titlebar_color system
 
-cursor_shape block
+# background_opacity 0.5
+# dynamic_background_opacity yes   
+
+cursor_shape underline
 cursor_blink_interval -1
 mouse_hide_wait -1.0
 disable_ligature always
+include dracula.conf

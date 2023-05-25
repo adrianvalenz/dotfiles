@@ -7,6 +7,7 @@
 require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'folke/tokyonight.nvim'
+  use 'cocopon/iceberg.vim'
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
@@ -15,6 +16,7 @@ require('packer').startup(function(use)
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
   }
+  use { 'kyazdani42/nvim-tree.lua' }
   use { "ellisonleao/gruvbox.nvim" }
   use {
     'lewis6991/gitsigns.nvim',
@@ -22,6 +24,7 @@ require('packer').startup(function(use)
       require('gitsigns').setup()
     end
   }
+  use { "rebelot/kanagawa.nvim" }
   use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
 end)
 
@@ -40,7 +43,7 @@ require("tokyonight").setup({
     sidebars = { "qf", "vista_kind", "terminal", "packer" },
   }
 })
-vim.cmd[[colorscheme tokyonight]]
+-- vim.cmd[[colorscheme tokyonight]]
 
 require('lualine').setup {
   options = {
