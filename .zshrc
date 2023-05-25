@@ -6,8 +6,8 @@
 # Example: plugins=(rails git ruby)
 plugins=(spotify)
 
-alias vim="lvim"
-alias vi="lvim"
+alias vim="nvim"
+alias vi="nvim"
 
 hackon() {
   if [ "$1" != "" ]
