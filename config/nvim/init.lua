@@ -131,6 +131,19 @@ require('lazy').setup({
 
   { 'rose-pine/neovim', name = 'rose-pine' },
 
+  {
+    'nvim-lualine/lualine.nvim',
+    event = 'ColorScheme',
+    config = function()
+      require('lualine').setup({
+        options = {
+          --- @usage 'rose-pine' | 'rose-pine-alt'
+          theme = 'rose-pine'
+        }
+      })
+    end
+  },
+
   -- {
   --   -- Theme inspired by Atom
   --   'navarasu/onedark.nvim',
@@ -246,6 +259,9 @@ vim.o.timeoutlen = 300
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
 
+-- Word wrap
+vim.wo.wrap = false
+
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
 
@@ -289,7 +305,7 @@ pcall(require('telescope').load_extension, 'fzf')
 -- See `:help telescope.builtin`
 vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] Find recently opened files' })
 vim.keymap.set('n', '<leader>b', require('telescope.builtin').buffers, { desc = '[ ] Find existing buffers' })
-vim.keymap.set('n', '<leader>/', function()
+vim.keymap.set('n', '<leader>f', function()
   -- You can pass additional configuration to telescope to change theme, layout, etc.
   require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
     winblend = 10,
