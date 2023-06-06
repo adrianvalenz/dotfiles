@@ -8,6 +8,8 @@ vim.api.nvim_set_keymap('n', '<leader>h', ':noh<CR>', {noremap = true})
 vim.api.nvim_set_keymap('n', '<C-n>', ':BufferLineCycleNext<CR>', {noremap = true})
 vim.api.nvim_set_keymap('n', '<C-p>', ':BufferLineCyclePrev<CR>', {noremap = true})
 vim.api.nvim_set_keymap('n', '<leader>c', ':bd<CR>', {noremap = true})
+
+-- Move cursor to extreme
 vim.api.nvim_set_keymap('n', 'gl', '$', {noremap = true})
 vim.api.nvim_set_keymap('n', 'gh', '|', {noremap = true})
 vim.api.nvim_set_keymap('n', 'gj', ':$<CR>', {noremap = true})
@@ -25,9 +27,9 @@ vim.cmd('colorscheme rose-pine')
 vim.o.scrolloff = 8
 
 -- Escape remap options
-vim.api.nvim_set_keymap('i', '<C-j>', '<Esc>', {noremap = true})
-vim.api.nvim_set_keymap('n', '<C-j>', '<Esc>', {noremap = true})
-vim.api.nvim_set_keymap('v', '<C-j>', '<Esc>', {noremap = true})
+vim.api.nvim_set_keymap('i', '<C-a>', '<Esc>', {noremap = true})
+vim.api.nvim_set_keymap('n', '<C-a>', '<Esc>', {noremap = true})
+vim.api.nvim_set_keymap('v', '<C-a>', '<Esc>', {noremap = true})
 
 -- Retired/Haitus remaps
 -- vim.cmd("highlight ColorColumn ctermbg=0 guibg=#1f1d2e")
