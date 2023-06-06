@@ -311,10 +311,10 @@ vim.keymap.set('n', '<leader>f', function()
     winblend = 10,
     previewer = false,
   })
-end, { desc = '[f] Fuzzily search in current buffer' })
+end, { desc = '[F]uzzily search in current buffer' })
 
 vim.keymap.set('n', '<leader>sg', require('telescope.builtin').git_files, { desc = '[S]earch [G]it Files' })
-vim.keymap.set('n', '<leader>ff', require('telescope.builtin').find_files, { desc = '[F]ind [F]iles' })
+vim.keymap.set('n', '<leader>sf', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })
 vim.keymap.set('n', '<leader>sh', require('telescope.builtin').help_tags, { desc = '[S]earch [H]elp' })
 vim.keymap.set('n', '<leader>sw', require('telescope.builtin').grep_string, { desc = '[S]earch current [W]ord' })
 vim.keymap.set('n', '<leader>fg', require('telescope.builtin').live_grep, { desc = '[F]ind by [G]rep' })
@@ -497,13 +497,14 @@ cmp.setup {
   mapping = cmp.mapping.preset.insert {
     ['<C-n>'] = cmp.mapping.select_next_item(),
     ['<C-p>'] = cmp.mapping.select_prev_item(),
-    ['<C-d>'] = cmp.mapping.scroll_docs(-4),
-    ['<C-f>'] = cmp.mapping.scroll_docs(4),
-    ['<C-Space>'] = cmp.mapping.complete {},
-    ['<CR>'] = cmp.mapping.confirm {
-      behavior = cmp.ConfirmBehavior.Replace,
-      select = true,
-    },
+    -- ['<C-d>'] = cmp.mapping.scroll_docs(-4),
+    -- ['<C-f>'] = cmp.mapping.scroll_docs(4),
+    -- ['<C-Space>'] = cmp.mapping.complete {},
+    -- ['<CR>'] = cmp.mapping.confirm {
+    --   behavior = cmp.ConfirmBehavior.Replace,
+    --   select = true,
+    -- },
+    -- I want Return to be just "Return" and not select anything
     ['<Tab>'] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.select_next_item()

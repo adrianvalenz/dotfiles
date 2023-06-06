@@ -135,22 +135,24 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: SFMono Nerd Font
+    # family: SFMono Nerd Font
+    family: Iosevka Nerd Font Mono
 
     # The `style` can be specified to pick a specific face.
-    style: Light
+    style: Regular
 
   # Bold font face
-  bold:
+  #bold:
     # Font family
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
     #family: monospace
-    family: SFMono Nerd Font
+    # family: SFMono Nerd Font
+    #family: Iosevka Nerd Font Mono
 
     # The `style` can be specified to pick a specific face.
-    style: Semibold
+    #style: Semibold
 
   # Italic font face
   italic:
@@ -158,22 +160,23 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: SFMono Nerd Font
+    # family: SFMono Nerd Font
+    family: Iosevka Nerd Font Mono
 
     # The `style` can be specified to pick a specific face.
-    style: Light Italic
+    style: Italic
 
   # Bold italic font face
-  bold_italic:
+  #bold_italic:
     # Font family
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
     #family: monospace
-    family: SFMono Nerd Font
+    # family: SFMono Nerd Font
 
     # The `style` can be specified to pick a specific face.
-    style: Semibold Italic
+    #style: Semibold Italic
 
   # Point size
   size: 16.0
@@ -183,7 +186,7 @@ font:
   # spacing.
   offset:
     x: 0
-    y: 0
+    y: 6
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the
