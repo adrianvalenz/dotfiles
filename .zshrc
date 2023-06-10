@@ -6,6 +6,9 @@
 # Example: plugins=(rails git ruby)
 plugins=(spotify)
 
+alias dcd="docker compose down --remove-orphans"
+alias dcr="docker compose run --rm app"
+
 alias vim="nvim"
 alias vi="nvim"
 

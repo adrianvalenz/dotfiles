@@ -15,7 +15,6 @@ vim.api.nvim_set_keymap('n', 'gh', '|', {noremap = true})
 vim.api.nvim_set_keymap('n', 'gj', ':$<CR>', {noremap = true})
 vim.api.nvim_set_keymap('n', 'gk', 'gg', {noremap = true})
 
-
 -- vim.g.copilot_no_tab_map = true
 vim.o.termguicolors = true
 vim.o.cursorline = true
@@ -23,8 +22,16 @@ vim.cmd('colorscheme rose-pine')
 
 -- vim.cmd("highlight Normal ctermbg=none guibg=none")
 -- vim.cmd("highlight NonText ctermbg=none guibg=none")
+--
+vim.api.nvim_set_keymap("n", "<leader>sv", "<C-w>v", {noremap = true}) -- split window vertically
+vim.api.nvim_set_keymap("n", "<leader>sh", "<C-w>s", {noremap = true}) -- split window horizontally
+vim.api.nvim_set_keymap("n", "<leader>se", "<C-w>=", {noremap = true}) -- make split window equal width
+vim.api.nvim_set_keymap("n", "<leader>sx", ":close<CR>", {noremap = true}) -- close current split window
 
-vim.o.scrolloff = 8
+vim.api.nvim_set_keymap("n", "<leader>to", ":tabnew<CR>", {noremap = true}) -- open new tab
+vim.api.nvim_set_keymap("n", "<leader>tn", ":tabn<CR>", {noremap = true}) -- go to next tab
+vim.api.nvim_set_keymap("n", "<leader>tp", ":tabp<CR>", {noremap = true}) -- got to prev tab
+vim.api.nvim_set_keymap("n", "<leader>tx", ":tabclose<CR>", {noremap = true}) -- close current tab
 
 -- Escape remap options
 vim.api.nvim_set_keymap('i', '<C-a>', '<Esc>', {noremap = true})

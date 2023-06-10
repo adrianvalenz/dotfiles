@@ -17,3 +17,4 @@ function Ghosted(color)
 end
 
 Ghosted()
+

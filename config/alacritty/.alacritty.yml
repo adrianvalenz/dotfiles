@@ -138,6 +138,7 @@ font:
     family: SFMono Nerd Font
 
     # The `style` can be specified to pick a specific face.
+    # style: Light
     style: Light
 
   # Bold font face
@@ -146,11 +147,11 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: monospace
+    # family: monospace
     family: SFMono Nerd Font
 
     # The `style` can be specified to pick a specific face.
-    style: Semibold
+    style: Bold
 
   # Italic font face
   italic:
@@ -169,14 +170,14 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    #family: monospace
+    # family: monospace
     family: SFMono Nerd Font
 
     # The `style` can be specified to pick a specific face.
-    style: Semibold Italic
+    style: Bold Italic
 
   # Point size
-  size: 18.0
+  size: 16.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -915,3 +916,4 @@ mouse:
 
   # Highlight window damage information.
   #highlight_damage: false
+  #
