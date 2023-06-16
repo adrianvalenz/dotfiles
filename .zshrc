@@ -6,6 +6,8 @@
 # Example: plugins=(rails git ruby)
 plugins=(spotify)
 
+export PATH="/Applications/Docker.app/Contents/Resources/bin:$PATH"
+
 alias dcd="docker compose down --remove-orphans"
 alias dcr="docker compose run --rm app"
 

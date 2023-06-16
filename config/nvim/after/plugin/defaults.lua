@@ -12,6 +12,8 @@ vim.api.nvim_set_keymap('n', '<leader>c', ':bd<CR>', {noremap = true})
 -- Move cursor to extreme
 vim.api.nvim_set_keymap('n', 'gl', '$', {noremap = true})
 vim.api.nvim_set_keymap('n', 'gh', '|', {noremap = true})
+vim.api.nvim_set_keymap('v', 'gl', '$', {noremap = true})
+vim.api.nvim_set_keymap('v', 'gh', '|', {noremap = true})
 vim.api.nvim_set_keymap('n', 'gj', ':$<CR>', {noremap = true})
 vim.api.nvim_set_keymap('n', 'gk', 'gg', {noremap = true})
 
@@ -20,6 +22,7 @@ vim.o.termguicolors = true
 vim.o.cursorline = true
 vim.cmd('colorscheme rose-pine')
 
+-- Transparent background
 -- vim.cmd("highlight Normal ctermbg=none guibg=none")
 -- vim.cmd("highlight NonText ctermbg=none guibg=none")
 --

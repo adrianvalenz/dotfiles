@@ -4,6 +4,7 @@
 [github]
   user    = adrianvalenz
 [alias]
+  deletebranch = push origin --delete
   a       = add -A
   ca      = commit -a
   cam     = commit -am
